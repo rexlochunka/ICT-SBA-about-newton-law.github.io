@@ -1,0 +1,86 @@
+<html>
+<style type="text/css">
+body {
+	background-image: url(v546batch3-mynt-34-badgewatercolor_1.jpg);
+}
+</style>
+<body>
+<SCRIPT language="JavaScript">
+   function check() {
+      var score = 0;
+      // MC question 1
+      if (quiz.q1[2].checked) {                  // 3rd answer correct
+         quiz.ans1.value = "你答對了!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans1.value = "你答錯了!";
+      }
+      // MC question 2
+      if (quiz.q2[0].checked) {                  // 1st answer correct
+         quiz.ans2.value = "你答對了!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans2.value = "你答錯了!";
+      }
+	   // MC question 3
+      if (quiz.q3[1].checked) {                  // 2nd answer correct
+         quiz.ans3.value = "你答對了!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans3.value = "你答錯了!";
+      }
+      quiz.scorebox.value = "You score " + score + " mark(s).";
+   }
+</SCRIPT>
+</HEAD>
+<BODY>
+<FONT face="Arial">
+<P>
+<FORM name="information">
+<h3>請輸入你的名字:</h3>
+<INPUT type="text" name="username" size="30">
+<h3>請選擇你的性別:</h3>
+<INPUT type="radio" name="sex" value="男">男
+<INPUT type="radio" name="sex" value="女">女
+<h3>請選擇你的班別:</h3>
+<SELECT name="class">
+<OPTION value="5M">5M</OPTION>
+<OPTION value="5H">5H</OPTION>
+<OPTION value="5J">5J</OPTION>
+<OPTION value="5S">5S</OPTION>
+</SELECT>
+</FORM>
+<FORM name="quiz">
+Q1.<IMG src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dfec5b0a5e34e538dadb5cdd62b447430315766e">是指甚麼?<P>
+<INPUT type="radio" name="q1" value="1">
+動量等於質量乘以速度。<BR>
+<INPUT type="radio" name="q1" value="2">物體 A 施加在物體 B 上面的力。<BR>
+<INPUT type="radio" name="q1" value="3">物體 B 施加在物體 A 上面的力。<BR>
+<INPUT type="text" name="ans1"><P>
+
+Q2.牛頓第三定律會產生甚麼的力?<P>
+<INPUT type="radio" name="q2" value="1">大小相等、方向相反的力。<BR>
+<INPUT type="radio" name="q2" value="2">有物體施加淨外力在它身上的力。<BR>
+  <INPUT type="radio" name="q2" value="3">物體施加的重力。<BR>
+  <INPUT type="text" name="ans2">
+<p>
+
+Q3.這定律的數學方程式是甚麼?<P>
+<INPUT type="radio" name="q3" value="1"><IMG src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1738cbe14085332f1dc18499c2b47ac496cd09b4"><BR>
+<INPUT type="radio" name="q3" value="2"><IMG src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e1702771cf8544a9ffacbc159f99f86b8eececa2"><BR>
+<INPUT type="radio" name="q3" value="3"><IMG src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ac869c610f6d5a36bdd20e002a032b1358f11004"><BR>
+<INPUT type="text" name="ans3">
+<P>
+<INPUT type="button" value="Check" onClick="check();">
+<INPUT type="text" name="scorebox">
+</FORM>
+</FONT>
+<img src="sticker.png" width="259" height="224"
+OnMouseUp="window.alert('Add oil! You need to believe yourself!');">
+<U><h1 align="left"><a href="newton law history.html">牛頓運動定律的發展簡史</a></h1></U>
+<U><h1 align="right"><a href="newton law.html">返回介紹頁面</a></h1></U>
+</body>
+</html>

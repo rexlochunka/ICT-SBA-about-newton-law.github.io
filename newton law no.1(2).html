@@ -1,0 +1,76 @@
+<html>
+<body>
+<SCRIPT language="JavaScript">
+   function check() {
+      var score = 0;
+      // MC question 1
+      if (quiz.q1[0].checked) {                  // 1st answer correct
+         quiz.ans1.value = "你答對了!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans1.value = "你答錯了!";
+      }
+      // MC question 2
+      if (quiz.q2[2].checked) {                  // 3rd answer correct
+         quiz.ans2.value = "你答對了!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans2.value = "你答錯了!";
+      }
+	   // MC question 3
+      if (quiz.q3[1].checked) {                  // 2nd answer correct
+         quiz.ans3.value = "你答對了!";   // display correct answer
+         score = score + 1;                      // increment score
+      }
+      else {
+         quiz.ans3.value = "你答錯了!";
+      }
+      quiz.scorebox.value = "You score " + score + " mark(s).";
+   }
+</SCRIPT>
+</HEAD>
+<BODY>
+<FONT face="Arial">
+<P>
+<FORM name="information">
+<h3>請輸入你的名字:</h3>
+<INPUT type="text" name="username" size="30">
+<h3>請選擇你的性別:</h3>
+<INPUT type="radio" name="sex" value="男">男
+<INPUT type="radio" name="sex" value="女">女
+<h3>請選擇你的班別:</h3>
+<SELECT name="class">
+<OPTION value="5M">5M</OPTION>
+<OPTION value="5H">5H</OPTION>
+<OPTION value="5J">5J</OPTION>
+<OPTION value="5S">5S</OPTION>
+</SELECT>
+</FORM>
+<FORM name="quiz">
+Q1.牛頓第一定律表明了甚麼?<P>
+<INPUT type="radio" name="q1" value="1">這個宇宙入面在某些參考系中不受外力影響的物體都會持續本身的運動。<BR>
+<INPUT type="radio" name="q1" value="2">施加於物體的外力等於質量與加速度的乘積。<BR>
+<INPUT type="radio" name="q1" value="3">當兩個物體互相施加力在對方身上的時侯，它們分別施加在對方身上的力是大細相等、方向相反的。<BR>
+<INPUT type="text" name="ans1"><P>
+
+Q2.數學方程式<IMG src="https://wikimedia.org/api/rest_v1/media/math/render/svg/39237e483fe8f429c79d41aba6772b0ead02075b">中的V是指甚麼?<P>
+<INPUT type="radio" name="q2" value="1">時間<BR>
+<INPUT type="radio" name="q2" value="2">第i個外力<BR>
+<INPUT type="radio" name="q2" value="3">舊物體的速度<BR>
+<INPUT type="text" name="ans2"><p>
+
+Q3.這定律暗示了甚麼?<P>
+<INPUT type="radio" name="q3" value="1">必須將時變質量納入考量。<BR>
+<INPUT type="radio" name="q3" value="2">不動的物體會保持不動，直至有淨外力施加在它身上為止。<BR>
+<INPUT type="radio" name="q3" value="3">兩個人互相推對方會有反作用力。<BR>
+<INPUT type="text" name="ans3"><p>
+
+<INPUT type="button" value="Check" onClick="check();">
+<INPUT type="text" name="scorebox">
+</FORM>
+</FONT>
+<U><h1 align="right"><a href="newton law no.2(1).html">下一運動定律</a></h1></U>
+</body>
+</html>
